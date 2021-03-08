@@ -4,28 +4,49 @@
 	padding: 0;
 }
 
+body{
+  font-family:  Helvetica;
+}
+
 #introDiv{
     text-align: center;
 }
 
-
 #raceAndEthnicity{
     
     text-align: center;
-  
 
 }
 
 #informationDiv{
     display: flex;
 justify-content: center;
-margin-top:2em;
-}
+flex-direction: row;
 
+
+}
 
 #obamaDiv{
     text-align: center;
-    visibility: hidden;
+ 
+}
+
+h4{
+    margin-bottom: .5em;
+    margin-top:.5em;
+}
+
+#trumpDiv{
+    margin-top: 15em;
+    text-align: center;
+   
+}
+
+#racePage{
+  display: none;
+  
+  padding: 2em;
+text-align: center;
 }
 
 img{
@@ -41,13 +62,32 @@ img{
 }
 
 button{
-    color: black;
-    border: none;
+    
+    background-color: #008CBA;
+    border-radius: 8px;
     font-size: 1em;
     font-weight: bold;
-    margin: 1em;
+    margin: .5em;
+    padding: .5em;
 }
 
 button:hover{
     color: red;
 }
+
+p{
+    padding-top: 1em;
+}
+
+
+
+
+
+
+#trumpJudgeRace{
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+

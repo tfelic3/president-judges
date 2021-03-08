@@ -4,35 +4,85 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
     <link rel="stylesheet" href="css/styles.css" />
+
+    
+
+    
     <title>Judge Breakdown</title>
   </head>
   <body>
     <div id="introDiv">
-      <h2>Comparing Obama and Trump judicial appointments</h2>
+      <h2>Comparing Presidents' Obama and Trump judicial appointments</h2>
       <div id="buttonMenu">
-        <button>Gender</button>
-        <button>Race and Ethnicity</button>
+        <button id="gender">Gender</button>
+        <button id="race">Race and Ethnicity</button>
       </div>
     </div>
 
+  <div id="genderPage">
     <div id="obamaDiv">
       <h4>President Barack Obama</h4>
       <div id="informationDiv">
         <div id="section">
           <img src="img/person.png" />
-          <p id="maleTotals">Male</p>
+          <p id="obamaMalePercentTotals">Male</p>
         </div>
         <div id="section">
           <img src="img/female.png" />
-          <p id="femalePercentTotals">Female</p>
+          <p id="obamaFemalePerecentTotals">Female</p>
         </div>
       </div>
     </div>
 
+    <div id="trumpDiv">
+      <h4>President Donald Trump</h4>
+      <div id="informationDiv">
+        <div id="section">
+          <img src="img/person.png" />
+          <p id="trumpMalePercentTotals">Male</p>
+        </div>
+        <div id="section">
+          <img src="img/female.png" />
+          <p id="trumpFemalePerecentTotals">Female</p>
+        </div>
+      </div>
+    </div>
 
-    <div id="raceAndEthnicity"></div>
+  </div>
 
-    <script src="script/script.js"></script>
+
+
+    <div id=racePage>
+
+     <div id="obamaJudgeRace">
+    <h4>President Barack Obama</h4>
+    <p id="obamaWhiteJudges">  <span> </span></p>
+    <p id="obamaAfricanAmerican"><span></span></p>
+    <p id="obamaHispanicJudges"><span></span></p>
+    <p id="obamaAsianAmerican"><span></span></p>
+    <p id="obamaOther"><span>Other</span></p>
+
+
+  </div> 
+
+
+  <div id="trumpJudgeRace">
+    <h4>President Donald J. Trump</h4>
+    <p id="trumpWhiteJudges"></p>
+    <p id="trumpAfricanAmericanJudges"></p>
+    <p id="trumpHispanicJudges"></p>
+    <p id="trumpAsianJudges"></p>
+    <p id="trumpOther">Other</p>
+  </div>
+
+    </div>
+
+
+   
+  
+
+    <script type="module" src="script/script.js"></script>
   </body>
 </html>
