@@ -1,0 +1,53 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+#introDiv{
+    text-align: center;
+}
+
+
+#raceAndEthnicity{
+    
+    text-align: center;
+  
+
+}
+
+#informationDiv{
+    display: flex;
+justify-content: center;
+margin-top:2em;
+}
+
+
+#obamaDiv{
+    text-align: center;
+    visibility: hidden;
+}
+
+img{
+    height: 200px;
+    width: auto;
+}
+
+#section{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 10px;
+}
+
+button{
+    color: black;
+    border: none;
+    font-size: 1em;
+    font-weight: bold;
+    margin: 1em;
+}
+
+button:hover{
+    color: red;
+}
