@@ -28,30 +28,83 @@ flex-direction: row;
 
 #obamaDiv{
     text-align: center;
- 
+ animation: fadein 4s;
+
 }
 
 h4{
     margin-bottom: .5em;
     margin-top:.5em;
+    text-align: center;
 }
 
 #trumpDiv{
     margin-top: 15em;
     text-align: center;
-   
+    animation: fadein 4s;   
 }
 
 #racePage{
   display: none;
-  
+  animation: fadein 2s;
   padding: 2em;
 text-align: center;
 }
 
+
 img{
     height: 200px;
     width: auto;
+   
+}
+
+#judgeImg{
+    height: 40px;
+    width: auto;
+    filter: none;
+}
+
+#obamaJudgeRace{
+   
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+   
+    margin-bottom: 2em;
+}
+
+#obamaJudgeRace p{
+    padding-left: 1em;
+}
+
+#trumpJudgeRace{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;  
+}
+
+
+#obamaOther, #trumpOther{
+    color: rgb(102, 45, 145);
+}
+#trumpJudgeRace p{
+    padding-left: 1em;
+}
+
+#appointments{
+    display: none;
+    animation: fadein 4s;
+}
+#obamaAppointments{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+#trumpAppointments{
+    display: flex;
+    flex-wrap: wrap;
+    
 }
 
 #section{
@@ -60,6 +113,8 @@ img{
     text-align: center;
     height: 10px;
 }
+
+
 
 button{
     
@@ -79,15 +134,31 @@ p{
     padding-top: 1em;
 }
 
-
-
-
-
-
-#trumpJudgeRace{
-    margin-top: 1em;
-    display: flex;
-    flex-direction: column;
+#judgeTooltip{
+    visibility: hidden;
+    width: 250px;
+    height: auto;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
 }
 
+
+
+
+@keyframes fadein{
+ 0% {
+     opacity: 0;
+ }
+
+ 100%{
+     opacity: 1;
+ }
+
+}
 
